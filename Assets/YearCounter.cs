@@ -23,15 +23,20 @@ public class YearCounter : MonoBehaviour
         Debug.Log("After adding 1 year: " + MainName + " is " + MainAge + " and the year is " + CurrentYear);
 
         AdditionYear(); 
-        Debug.Log("After adding " + AddYear + " years to the original values: " + MainName + " will be " + MainAge + " and the year will be " + CurrentYear);
+        Debug.Log("And after " + AddYear + " years " + MainName + " will be " + MainAge + " and the year will be " + CurrentYear);
     }
-
+    /// <summary>
+    /// Adds additional years to the counter
+    /// </summary>
     public void AdditionYear()
     {
         MainAge = originalAge + AddYear;
         CurrentYear = originalYear + AddYear;
     }
 
+    /// <summary>
+    /// Adds year to the current age and year
+    /// </summary>
     public void AdditionYear(int yearsToAdd)
     {
         MainAge += yearsToAdd;
